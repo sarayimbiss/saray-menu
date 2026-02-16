@@ -39,7 +39,7 @@
     
     .content { flex: 1; display: flex; gap: 1vw; }
     
-    .box { flex: 1; background: rgba(0,0,0,0.88); border: 3px solid #d4a017; border-radius: 10px; padding: 0.4vh 0.8vw; display: flex; flex-direction: column; overflow: hidden; animation: borderPulse 3s ease-in-out infinite; }
+    .box { flex: 1; background: rgba(0,0,0,0.88); border: 3px solid #d4a017; border-radius: 10px; padding: 0.4vh 0.8vw; display: flex; flex-direction: column; overflow: visible; animation: borderPulse 3s ease-in-out infinite; }
     @keyframes borderPulse { 0%, 100% { border-color: #d4a017; box-shadow: 0 0 10px rgba(212,160,23,0.3); } 50% { border-color: #ffd700; box-shadow: 0 0 25px rgba(255,215,0,0.6); } }
     
     .title { font-family: 'Cinzel', serif; font-size: 2.2vh; font-weight: 900; color: #ff2a45; text-align: center; text-shadow: 0 0 15px rgba(255,42,69,0.7); margin-bottom: 0.1vh; animation: titleGlow 2s ease-in-out infinite; }
@@ -62,17 +62,18 @@
     .subbox { background: rgba(0,0,0,0.88); border: 3px solid #d4a017; border-radius: 10px; padding: 0.3vh 0.8vw; animation: borderPulse 3s ease-in-out infinite; }
     .subbox.grow { flex: 1; }
       .cat-img {
-        height: 14vh;
+        height: 12vh;
         max-width: 100%;
         object-fit: contain;
         display: block;
-        margin: 0.1vh auto;
+        margin: 0.3vh auto;
         filter: drop-shadow(0 3px 15px rgba(255,180,0,0.5));
         animation: foodFloat 4s ease-in-out infinite;
         position: relative;
         z-index: 2;
+        flex-shrink: 0;
       }
-      .cat-img.deluxe { height: 28vh; }
+      .cat-img.deluxe { height: 18vh; flex-shrink: 0; }
 
       /* Erste Box (Döner Kebab) etwas kleiner damit alles passt */
       .content > .box:first-child .title { font-size: 2.0vh; }
