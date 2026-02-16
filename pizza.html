@@ -67,32 +67,23 @@
     
     .banner-title { font-family: 'Cinzel', serif; font-size: 3vh; font-weight: 900; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(255,215,0,0.8); }
     .banner-text { font-size: 2.2vh; font-weight: 700; color: #ffd700; }
-      .pizza-hero {
+      .pizza-header-area {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2vw;
-        margin-bottom: 0.3vh;
-      }
-      .pizza-hero-text {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-bottom: 0.5vh;
       }
       .cat-img {
-        height: 26vh;
-        max-width: 40%;
+        height: 12vh;
         object-fit: contain;
         display: block;
-        filter: drop-shadow(0 4px 25px rgba(255,180,0,0.7)) drop-shadow(0 0 40px rgba(255,120,0,0.3));
+        filter: drop-shadow(0 4px 20px rgba(255,180,0,0.6)) drop-shadow(0 0 30px rgba(255,120,0,0.3));
         animation: foodFloat 4s ease-in-out infinite;
-        position: relative;
-        z-index: 2;
       }
       @keyframes foodFloat {
         0%, 100% { transform: translateY(0) scale(1); }
-        50% { transform: translateY(-4px) scale(1.02); }
+        50% { transform: translateY(-3px) scale(1.01); }
       }
   </style>
 </head>
@@ -596,17 +587,18 @@ FHEoxVbtOOIfQYFxdls4sSsvipF0rSUAaeW8V8BEf4qfMsvUUa21WSGxGTuRJu1EVszYCf1PyVoe
 9Iy0CeQkZlSRQJ93o7YbW3+tJQ79Rm8xipAEISSxpNet6OA4s24XqStUfak+q+D/O02dcUHMLDvW
 s/dV2u8acjzuEc4Fm04XFRWcQbOx2EAFlgSC4hBERsKr8mKkIDmP8MLM/GmTUYFar1A1gyd+57ft
 fbdK2GxSF8l8Og2/GUSvkgzHxAPhaIpqrYbdVnOn9zQCopwAAAAA" class="logo" alt="Saray"></div>
-    <div class="pizza-hero">
-      <div class="pizza-hero-text">
+    <div class="pizza-header-area">
+      <img src="images/pizza.png" class="cat-img" alt="Pizza">
+      <div>
         <div class="pizza-title">PIZZA</div>
         <div class="pizza-sub">Alle Pizzen mit Tomatensoße und Goudakäse</div>
-        <div class="sizes">
-          <span class="size">26 cm</span>
-          <span class="size">30 cm</span>
-          <span class="size">50 cm</span>
-        </div>
       </div>
-      <img src="images/pizza.png" class="cat-img" alt="Pizza">
+      <img src="images/pizza.png" class="cat-img" alt="Pizza" style="transform: scaleX(-1);">
+    </div>
+    <div class="sizes">
+      <span class="size">26 cm</span>
+      <span class="size">30 cm</span>
+      <span class="size">50 cm</span>
     </div>
     <div class="content">
       <div class="box">
